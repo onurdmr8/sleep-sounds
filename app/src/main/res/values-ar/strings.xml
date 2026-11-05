@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">أصوات النوم والضوضاء البيضاء</string>
+    <string name="select_sound_hint">المس الأصوات لتشغيلها ومزجها</string>
+    <string name="active_sounds_count">%1$d أصوات قيد التشغيل</string>
+    <string name="timer_title">مؤقت النوم</string>
+    <string name="timer_desc">ستنخفض الأصوات تدريجياً وتتوقف تلقائياً عند انتهاء الوقت.</string>
+    <string name="cancel_timer">إلغاء المؤقت</string>
+    <string name="sound_rain">مطر هادئ</string>
+    <string name="sound_ocean">أمواج البحر</string>
+    <string name="sound_fireplace">فرقعة الحطب</string>
+    <string name="sound_wind">رياح لطيفة</string>
+    <string name="sound_crickets">صراصير الليل</string>
+    <string name="sound_stream">جدول ماء</string>
+    <string name="sound_heartbeat">نبضات القلب</string>
+    <string name="sound_brown_noise">ضوضاء بنية (مروحة عميقة)</string>
+    <string name="sound_pink_noise">ضوضاء وردية (نوم عميق)</string>
+    <string name="sound_white_noise">ضوضاء بيضاء (تركيز)</string>
+</resources>

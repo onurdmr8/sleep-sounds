@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Schlafgeräusche &amp; Weißes Rauschen</string>
+    <string name="select_sound_hint">Tippen Sie auf Töne zum Mischen</string>
+    <string name="active_sounds_count">%1$d Töne aktiv</string>
+    <string name="timer_title">Schlaftimer</string>
+    <string name="timer_desc">Die Töne werden sanft ausgeblendet und automatisch beendet.</string>
+    <string name="cancel_timer">Timer ausschalten</string>
+    <string name="sound_rain">Sanfter Regen</string>
+    <string name="sound_ocean">Meereswellen</string>
+    <string name="sound_fireplace">Kaminfeuer</string>
+    <string name="sound_wind">Sanfter Wind</string>
+    <string name="sound_crickets">Nachtgrillen</string>
+    <string name="sound_stream">Fluss &amp; Bach</string>
+    <string name="sound_heartbeat">Herzschlag &amp; Mutterleib</string>
+    <string name="sound_brown_noise">Braunes Rauschen (Ventilator)</string>
+    <string name="sound_pink_noise">Rosa Rauschen (Tiefschlaf)</string>
+    <string name="sound_white_noise">Weißes Rauschen (Fokus)</string>
+</resources>

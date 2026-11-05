@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Sleep Sounds &amp; White Noise</string>
+    <string name="select_sound_hint">Tap sounds to play and mix</string>
+    <string name="active_sounds_count">%1$d sounds playing</string>
+    <string name="timer_title">Sleep Timer</string>
+    <string name="timer_desc">Sounds will smoothly fade out and turn off when the timer ends.</string>
+    <string name="cancel_timer">Turn Off Timer</string>
+    <string name="sound_rain">Gentle Rain</string>
+    <string name="sound_ocean">Ocean Waves</string>
+    <string name="sound_fireplace">Crackling Fireplace</string>
+    <string name="sound_wind">Soft Wind</string>
+    <string name="sound_crickets">Night Crickets</string>
+    <string name="sound_stream">Water Stream</string>
+    <string name="sound_heartbeat">Womb &amp; Heartbeat</string>
+    <string name="sound_brown_noise">Brown Noise (Deep Fan)</string>
+    <string name="sound_pink_noise">Pink Noise (Deep Sleep)</string>
+    <string name="sound_white_noise">White Noise (Focus)</string>
+</resources>
