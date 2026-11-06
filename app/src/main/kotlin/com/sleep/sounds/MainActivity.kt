@@ -10,14 +10,19 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.google.android.gms.ads.MobileAds
 import com.sleep.sounds.ui.sleep.SleepScreen
+import com.sleep.sounds.util.InterstitialAdManager
 
 class MainActivity : ComponentActivity() {
+
+    private lateinit var interstitialAdManager: InterstitialAdManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
         // Google AdMob SDK'sını başlat
         MobileAds.initialize(this) {}
+        interstitialAdManager = InterstitialAdManager(this)
 
         setContent {
             MaterialTheme {
@@ -25,7 +30,11 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    SleepScreen()
+                    SleepScreen(
+                        onTriggerAd = {
+                            interstitialAdManager.showIfReady(this@MainActivity)
+                        }
+                    )
                 }
             }
         }

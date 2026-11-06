@@ -69,7 +69,8 @@ import com.sleep.sounds.ui.components.AdBanner
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SleepScreen(
-    viewModel: SleepViewModel = viewModel()
+    viewModel: SleepViewModel = viewModel(),
+    onTriggerAd: () -> Unit = {}
 ) {
     val state by viewModel.uiState.collectAsState()
     var showTimerSheet by remember { mutableStateOf(false) }
@@ -124,7 +125,10 @@ fun SleepScreen(
                     }
 
                     // Master Başlat / Durdur
-                    IconButton(onClick = { viewModel.toggleMasterPlay() }) {
+                    IconButton(onClick = {
+                        viewModel.toggleMasterPlay()
+                        onTriggerAd()
+                    }) {
                         Icon(
                             imageVector = if (state.isMasterPlaying) Icons.Default.Pause else Icons.Default.PlayArrow,
                             contentDescription = "Oynat/Durdur",
@@ -172,6 +176,9 @@ fun SleepScreen(
             onSetTimer = { minutes ->
                 viewModel.setTimer(minutes)
                 showTimerSheet = false
+                if (minutes > 0) {
+                    onTriggerAd()
+                }
             },
             onDismiss = { showTimerSheet = false }
         )
